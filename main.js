@@ -8,6 +8,7 @@ function createWindow () {
     frame: false,
     webPreferences: {
       nodeIntegration: true,
+      contextIsolation: false,
       enableRemoteModule:true,
       devTools:true
     }

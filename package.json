@@ -23,7 +23,7 @@
     "electron-builder": "^22.9.1"
   },
   "build": {
-    "appId": "com.oxeygames.kiwilauncher",
+    "appId": "com.oxey405.kiwilauncher",
     "win": {
       "target": [
         "nsis",
