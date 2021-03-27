@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <title>KiwiLauncher</title>
+  </head>
+    <body>
+<div class="topbar" >
+  <a href="index.html">Menu</a>
+<a href="library.html" class="actual">Library</a>
+<a href="store.html">Store</a>
+<a href="news.html">News</a>
+<a href="settings.html">Settings</a>
+
+
+<button type="button" name="button" title="quit app" class="quitButton" class="undrag" onclick="exitApp();" >×</button>
+  <button type="button" name="button" title="move window" class="dragZone" style="-webkit-app-region: drag">🤏</button>
+</div>
+<h1 class="TitlePage">KiwiLauncher</h1>
+<h2 class="TitlePage" id="libTitle" >Game library</h2>
+      <center>
+        <div class="gameList" id="gameList">
+        <!--  <div class="contextMenu" title="Play to this game">
+            <button type="button" onClick="launch();" class="playButton" name="button">▶</button>
+            <p class="gameTitle">GAME NAME</p>
+          </div>
+        </div> !-->
+      </center>
+      <script src="scripts/js/customframe.js" charset="utf-8"></script>
+        <script src="scripts/js/gameList.js" charset="utf-8"></script>
+        <script src="scripts/js/gameExecutor.js" charset="utf-8"></script>
+        <script src="scripts/js/libLoader.js" charset="utf-8"></script>
+        <script src="scripts/js/preferencesLoader.js" charset="utf-8"></script>
+       
+    </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <title>KiwiLauncher</title>
+  </head>
+    <body>
+<div class="topbar" >
+  <a id="menu" onclick="menu();" class="actual">Menu</a>
+<a id="library" onclick="lib();">Library</a>
+<a id="store" onclick="store();">Store</a>
+<a id="news">News</a>
+<a id="settings" onclick="settings();">Settings</a>
+
+<button type="button" name="button" title="close window" class="quitButton" class="undrag" onclick="stopApp();" >🛑</button>
+<button type="button" name="button" title="close window" class="topButton" class="undrag" onclick="exitApp();" >×</button>
+  <button type="button" name="button" title="move window" class="dragZone" style="-webkit-app-region: drag">💠</button>
+</div>
+<h1 class="TitlePage">KiwiLauncher</h1>
+<h2 class="TitlePage" id="welcomeText">welcome on kiwilauncher !</h2>
+<div class="downloadIndicator" > <p id="dwnld">loading DownloadManager</p>
+  <div class="progressBar" id="progressBar"></div>
+  </div>
+      <center>
+        <div class="mainPageContext">
+         
+          <div class="libraryBox" >
+            
+         </div>
+         <div class="storeBox" >
+            
+        </div>
+         
+         <div id="toHide" style="text-align:center">
+   
+        </div>
+        
+        </div>
+      </center>
+      <script src="scripts/js/preferencesLoader.js" charset="utf-8"></script>
+      <script src="scripts/js/customframe.js" charset="utf-8"></script>
+      <script src="scripts/js/downloadManager.js"></script>
+      <script src="scripts/js/windowManager.js"></script>
+      <script src="scripts/js/storeManager.js"></script>
+      <script src="scripts/js/gameList.js"></script>
+      <script src="scripts/js/gameExecutor.js"></script>
+      <script src="scripts/js/warning.js"></script>
+      <script src="scripts/js/parameters.js"></script>
+      <script>
+        menu();
+        
+      </script>
+    </body>
+</html>

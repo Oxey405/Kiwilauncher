@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <title>KiwiLauncher</title>
+  </head>
+    <body>
+<div class="topbar" >
+  <a href="index.html">Menu</a>
+<a href="library.html">Library</a>
+<a href="store.html" class="actual">Store</a>
+<a href="news.html">News</a>
+<a href="settings.html">Settings</a>
+
+
+<button type="button" name="button" title="quit app" class="quitButton" class="undrag" onclick="exitApp();" >×</button>
+  <button type="button" name="button" title="move window" class="dragZone" style="-webkit-app-region: drag">🤏</button>
+</div>
+<h1 class="TitlePage">KiwiLauncher</h1>
+<h2 class="TitlePage" id="storeTitle" >Online store</h2>
+<div class="downloadIndicator" > <p id="dwnld">loading DownloadManager</p>
+<div class="progressBar" id="progressBar"></div>
+</div>
+      <center>
+        <div class="gameList">
+          <div class="contextMenu" onClick="alert('you must stay on this page for follow the download progress \r\n(due to limiations with the framework)');" title="Play to this game">
+            <a id="downloadButton" href="http://oxey-games.com/games/download/colorsup/colorsup-linux.AppImage" download><button type="button" id="getThisGame" class="getButton" name="button">Get this game</button></a>
+            <p class="gameTitle">GAME NAME</p>
+          </div>
+        </div>
+      </center>
+      <script src="scripts/js/customframe.js" charset="utf-8"></script>
+        <script src="scripts/js/gameList.js" charset="utf-8"></script>
+        <script src="scripts/js/preferencesLoader.js" charset="utf-8"></script>
+       <script src="scripts/js/storeManager.js" charset="utf-8"></script>
+       <script src="scripts/js/downloadManager.js"></script>
+
+    </body>
+</html>
