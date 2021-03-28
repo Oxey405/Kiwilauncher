@@ -10,6 +10,7 @@
   },
   "scripts": {
     "start": "electron .",
+    "test": "electron .",
     "dist:linux": "electron-builder --linux --publish onTag",
     "dist:win": "electron-builder --win --publish onTag",
     "dist:mwl": "electron-builder -mwl"
