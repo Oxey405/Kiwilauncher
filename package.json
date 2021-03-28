@@ -10,9 +10,9 @@
   },
   "scripts": {
     "start": "electron .",
-    "dist:linux": "electron-builder --linux --publish",
-    "dist:win": "electron-builder --win",
-    "dist:mwl":"electron-builder -mwl"
+    "dist:linux": "electron-builder --linux --publish onTag",
+    "dist:win": "electron-builder --win --publish onTag",
+    "dist:mwl": "electron-builder -mwl"
   },
   "keywords": [
     "kiwilauncher",
@@ -34,7 +34,7 @@
         "nsis",
         "portable"
       ],
-      "publish":"github",
+      "publish": "github",
       "icon": "ressources/logo.ico"
     },
     "linux": {
@@ -45,11 +45,11 @@
       ],
       "icon": "ressources/logo256x.png",
       "category": "other",
-      "publish":"github"
-      
+      "publish": "github"
     }
   },
   "dependencies": {
-    "electron-updater": "^4.3.8"
+    "electron-updater": "^4.3.8",
+    "update-electron-app": "^2.0.1"
   }
 }
