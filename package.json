@@ -4,10 +4,15 @@
   "description": "kiwi launcher is a free, open source and community based game launcer",
   "homepage": "oxey405.com/kiwilauncher",
   "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Oxey405/Kiwilauncher.git"
+  },
   "scripts": {
     "start": "electron .",
-    "dist:linux": "electron-builder --linux",
-    "dist:win": "electron-builder --win"
+    "dist:linux": "electron-builder --linux --publish",
+    "dist:win": "electron-builder --win",
+    "dist:mwl":"electron-builder -mwl"
   },
   "keywords": [
     "kiwilauncher",
@@ -29,6 +34,7 @@
         "nsis",
         "portable"
       ],
+      "publish":"github",
       "icon": "ressources/logo.ico"
     },
     "linux": {
@@ -38,7 +44,12 @@
         "snap"
       ],
       "icon": "ressources/logo256x.png",
-      "category": "other"
+      "category": "other",
+      "publish":"github"
+      
     }
+  },
+  "dependencies": {
+    "electron-updater": "^4.3.8"
   }
 }

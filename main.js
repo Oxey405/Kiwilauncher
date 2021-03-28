@@ -1,5 +1,8 @@
 const { Menu, Tray, app, BrowserWindow } = require('electron');
-
+require('update-electron-app')({
+  repo: 'Oxey405/Kiwilauncher',
+  updateInterval: '1 hour'
+})
 function createWindow () {
   // Cree la fenetre du navigateur.
   const win = new BrowserWindow({
@@ -10,7 +13,7 @@ function createWindow () {
       nodeIntegration: true,
       contextIsolation: false,
       enableRemoteModule:true,
-      devTools:true
+      devTools:false
     }
   })
 
