@@ -40,7 +40,7 @@ var outputJSON ;
 function getGame(gameName) {
     console.log("Trying to get properties of " + gameName);
     var key = "TestPassWD!";
-var rqstURL = `http://localhost/oxey405/API/Kiwilauncher/makeRequest.php?token=${key}&request=Game&args=${gameName}` ;
+var rqstURL = `http://192.168.2.69/oxey405/API/Kiwilauncher/makeRequest.php?token=${key}&request=Game&args=${gameName}` ;
 var gameJSON = "" ;
 var rqst = new XMLHttpRequest();
 rqst.open('GET', rqstURL);
