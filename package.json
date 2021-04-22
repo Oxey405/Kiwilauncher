@@ -13,7 +13,8 @@
     "test": "electron .",
     "dist:linux": "electron-builder --linux --publish onTag",
     "dist:win": "electron-builder --win --publish onTag",
-    "dist:mwl": "electron-builder -mwl"
+    "dist:mwl": "electron-builder -mwl",
+    "dist:rpi":"electron-builder --linux --armv7l"
   },
   "keywords": [
     "kiwilauncher",
